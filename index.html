@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,42 @@
     <title>Demo JS</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1 class="title color">Demo JavaScript</h1>
 
     <h2 id="hello">Hello .NET</h2>
     <h3 class="helloClass">Hello .NET</h3>
-    <br><br><br><br><br>
-
 
     <h2>Calculatrice</h2>
 
-    <label for="input1">number1</label>
+    <label for="input1">Nombre 1</label>
     <input type="number" name="" id="input1">
 
     <br>
 
-    <label for="input2">number2</label>
+    <label for="input2">Nombre 2</label>
     <input type="number" name="" id="input2">
-    <button id="btn">Calculate</button>
-    <p id="response">Respone : </p>
+
+    <br>
+
+    <label for="operator">Operation</label>
+    <select id="operator">
+        <option value="+">Addition</option>
+        <option value="-">Soustraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>
+    </select>
+
+    <button id="btn">Calculer</button>
+    <p id="response">Response : </p>
+
+    <h2>Liste dynamique</h2>
+
+    <label for="itemInput">Element a ajouter</label>
+    <input type="text" id="itemInput">
+    <button id="addItemBtn">Ajouter</button>
+
+    <div id="parent">
+
+    </div>
 </body>
 </html>
