@@ -167,7 +167,6 @@ function calculate(number1, number2, selectedOperator) {
             return 'Operateur inconnu';
     }
 }
-
 // addEventListener permet d'ecouter une action utilisateur.
 button.addEventListener('click', () => {
     const value1 = input1.valueAsNumber; // valueAsNumber renvoie un number.
@@ -333,6 +332,8 @@ const addItemBtn = document.getElementById('addItemBtn');
 const itemInput = document.getElementById('itemInput');
 const list = document.createElement('ul');
 
+addItemBtn.addEventListener('click', () => addListItem('he'), { once: true });
+
 parent.appendChild(list);
 
 function addListItem(text) {
@@ -360,3 +361,31 @@ addItemBtn.addEventListener('click', () => {
     itemInput.value = '';
     itemInput.focus();
 });
+
+
+// Les fonctions
+
+const res1 = mySum(5, 7);
+
+function mySum(number1, number2) {
+    const resultat = number1 + number2;
+    return resultat;
+};
+
+const res2 = mySum(5, 7);
+
+const res3 = nbIsEven(5);
+
+const nbIsEven = function(nb) {
+    return nb % 2 == 0;
+}
+
+const res3 = nbIsEven(4);
+
+// Valeur par defaut
+function sayHello(name = 'Khun', heure) {
+    console.log(`Bonjour, je m'appelle ${name} et il est ${heure} heure.`);
+}
+
+// Quand on va vouloir l'appeler en passant name en valeur par defaut
+sayHello(undefined, 5);

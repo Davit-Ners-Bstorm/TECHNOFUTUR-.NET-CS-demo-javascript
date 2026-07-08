@@ -91,6 +91,8 @@ const birthDateInput = document.getElementById('birthDate');
 const calculateBtn = document.getElementById('calculateBtn');
 const result = document.getElementById('result');
 
+calculateBtn.disabled = true;
+
 calculateBtn.addEventListener('click', () => {
     const birthDateValue = birthDateInput.value;
 
